@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf=8">
+	<head>
+		<title>
+		Form Elements
+		</title>
+	</head>
+	<body>
+	<h1>버튼 클릭하여 전송하기</h1>
+	<hr>
+	<h3>form 태그 내의 submit & reset 버튼</h3>
+	<form> <!-- <form>은 전송을 위한 태그 -->
+		검색 :
+		<input type=text name=search> 
+		<!-- type= text or search 텍스트는 아무것도 안뜨지만 
+		서치를 사용하면 X로 텍스트를 지울 수 있다. -->
+		<input type=submit value="검색">
+		<input type=reset value="취소">
+		<p>
+		이미지 버튼 :
+		<input type=image src=자전거.jpg
+				width=50 alt="이미지 버튼">
+		<button> <!-- 버튼은 기본 default가 submit 상태이다. -->
+			<img src=자전거.jpg width=50><br>
+			검색
+		</button>
+	</form>
+	</body>
+</html>

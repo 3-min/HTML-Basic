@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf=8">
+	<head>
+		<title>
+		전산기초실습 6주차 실습과제
+		</title>
+	</head>
+	<body>
+	<h1>전산기초실습 6주차 실습과제</h1>
+	<hr>
+	<h3>20233231 김상민 샌드위치 인제점입니다!</h3>
+	<form>
+	<fieldset>
+		<legend> [ 샌드위치 종류를 선택하세요 ] </legend><p>
+		<select name=food size=5 multiple>
+			<option value=터키베이컨 selected>터키베이컨</option>
+			<option value=토스트치킨>토스트치킨</option>
+			<option value=에그마요>에그마요</option>
+			<option value=미트볼>미트볼</option>
+			<option value=스테이크>스테이크</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend> [ 빵을 선택하세요 ] </legend><p>
+		<label><input type=radio name=food value=white checked>화이트</label>
+		<label><input type=radio name=food value=pamasan>파마산 오레가노</label>
+		<label><input type=radio name=food value=honey>허니오트</label>
+		<label><input type=radio name=food value=platbread>플랫브래드</label>
+		<label><input type=radio name=food value=whiite>휘트</label>
+	</fieldset>
+	<fieldset>
+		<legend> [ 치즈를 선택하세요 ] </legend><p>
+		<label><input type=radio name=food value=american checked>아메리칸</label>
+		<label><input type=radio name=food value=shured>슈레드</label>
+		<label><input type=radio name=food value=mozzarella>모짜렐라</label>
+		<label><input type=radio name=food value=nocheese>치즈 제외</label>
+	</fieldset>
+	<fieldset>
+		<legend> [ 야채를 선택하세요 ] </legend><p>
+		<label><input type=checkbox name=spice value=yangsangchu checked>양상추</label>
+		<label><input type=checkbox name=spice value=tomato>토마토</label>
+		<label><input type=checkbox name=spice value=yangpa checked>양파</label>
+		<label><input type=checkbox name=spice value=phicle>피클</label>
+		<label><input type=checkbox name=spice value=oli>올리브</label>
+		<label><input type=checkbox name=spice value=hall>할라피뇨</label>
+	</fieldset>
+	<fieldset>
+		<legend> [ 배달 정보를 입력하세요 ] </legend><p>
+		연락처 : <input type=tel name=number placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+		주소 : <input type=text name=adress value=""><p>
+		배달 시간 : 
+		<input type=date name=date value="2023-04-06">
+		<input type=time name=time value="11:30">
+		배달 요청 : 
+		<select name=order>
+		<optgroup label=요청사항>
+			<option value=claim>문 앞에 두고 문자
+		</optgroup>
+		</select><p>
+		요청 사항 : <textarea name=myarea rows=5 cols=55>리뷰이벤트 참여</textarea>
+	</fieldset><p>
+	<input type=submit value="주문하기">
+	<input type=reset value="취소하기">
+	</form>
+	</body>
+</html>
