@@ -1,0 +1,1 @@
+23,24에서 widtg,hspace,vspace같은 여백,크기 사용가능

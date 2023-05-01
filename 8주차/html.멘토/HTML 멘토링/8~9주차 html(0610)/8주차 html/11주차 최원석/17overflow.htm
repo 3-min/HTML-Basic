@@ -1,0 +1,21 @@
+﻿<html>
+<head><title>overflow</title>
+<style>
+	body{font-size:20}
+	#layer1{position:absolute;left:50;top:50;
+		height:250;width:430;
+		background-color:green;
+		overflow:visible;}
+	#layer2{position:absolute;left:50;top:330;
+		height:250;width:430;
+		background-color:yellow;
+		overflow:scroll;}
+	img {width:200;height:150}
+</style></head>
+<body>
+<div id=layer1><img src="koala.jpg">
+<img src="koala.jpg"><img src="koala.jpg"></div>
+<div id=layer2><img src="koala.jpg">
+<img src="koala.jpg"><img src="koala.jpg"></div>
+</body>
+</html>

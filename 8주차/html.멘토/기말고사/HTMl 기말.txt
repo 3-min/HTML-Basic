@@ -1,0 +1,202 @@
+******************style***********************
+h2{font-style:italic;color:}
+임베딩 스타일
+<body>
+	<h2 style = "font-family:궁서체;color:blue">
+</body>
+링크*****@import 사용시 css 파일에 싹 다 지정
+<link rel="stylesheet"				<style>
+					==	@import"dynamic.css"
+						</style>
+	type="text/css"
+	href="dynamic.css">
+
+클래스 스타일
+h2.red{}   or    .name{}
+
+id 스타일
+#name{}	
+
+스타일 내에 스타일
+h2 b {}(h2 안에 b 태그에 스타일 지정)
+
+좁은 범위 묶어서 처리
+<span style ="font-style:italic;color:red">
+
+링크 스타일 지정
+a:link	 {} (일반)
+a:visited{} (방문한거)
+a:hover  {} (마우스 올렸을때)
+a:active {} (클릭한 상태)
+
+페수도 클래스
+div:first-line{}
+div:first-letter{}
+
+스타일
+text-decoration:line-through	none(줄긋기)
+
+테두리
+background-color:
+background-image:url(사진.확장)
+background-repaet:no-repeat or x or y fixed n%(고정)
+background-position:absolute;
+top:180;left:180;z-index:
+
+글자 합치기
+위치값 지정해줘서 그냥 쓴다
+
+목록 태그 스타일
+ul li{}
+목록 번호에 사진 넣기{list-style-image:url(그림2.png)}
+{float:left}배열 위치값 지정
+
+디스플레이
+{display:inline} 옆으로 배열 전시???
+{display:block}
+
+스크롤바
+body {scrollbar-face-color:red;
+		scrollbar-shadow-color:navy;
+		scrollbar-track-color:lightblue;
+		scrollbar-arrow-color:navy;} 
+face: 스크롤바 색상
+track: 길 색상
+arrow 화살표 색상
+
+테두리 속성
+{border-top:solid black 10px;(선모양 색상 크기)}
+
+곡선 처리
+border-bottom-left-radius:50px
+
+테두리에 이미지 넣기
+border-image:url(사진.jpg)
+
+여백 넣기
+margin:50 30; 상하 50 좌우 30
+margin:50; = 상하좌우 모두 50px
+
+그림자 속성
+box-shadow = 5 5 10 (오른쪽으로 5픽셀 아래쪽으로 5픽셀 10픽셀만큼 퍼지게)
+text-shadow = 글자 그림자 설정
+
+외곽선 지정
+outline:10 type(solid dotted...) 색상
+
+투명도 지정
+style="opacity:0.5"
+******************layer***********************
+레이어 만들기
+#layer1 {position:absolute;left:150;top:200;
+		height:200;width:300;z-index:1;
+		background-color:red;}
+<div id =layer3>
+visibility:hidden;(레이어 숨김)
+background-image:url(사진2.jpg)(배경 이미지)
+숨은 레이어 보이게 하기
+
+(마우스 올리면 3번 레이어가 나타남)***스타일 지정 할 때 3번 레이어는 히든 상태로 지정 해놓는다
+<div id=layer2 OnMouseOver="layer3.style.visibility='visible'"
+OnMouseOut="layer3.style.visibility='hidden'"></div>
+(마우스 클릭하면 3번 레이어가 나타남)
+OnMousedown="layer3.style.visibility='visible'"
+OnMousemove="layer3.style.visibility='hidden'"
+보이게 할 영역 설정
+clip:rect(100px,300px,200px,150px)
+사진이 레이어의 크기 범위에 벗어 났을 때
+overflow:hidden; 생략
+overflow:scroll; 스크롤
+css 레이아웃
+body  	{margin:0;font-size:15pt}
+header  {height:15%;padding:20;background-color:pink;}
+nav 	{width:300;height:60%;padding:20;background-color:lightblue;float:left}
+section {height:60%;padding:20;background-color:yellowgreen}
+footer {height:15%;padding:20;background-color:tan;clear:both}
+
+css 레이아웃 id를 사용해서 만든것
+	#header  {position:absolute;left:0;top:0;padding:10;
+		height:100;width:100%;background-color:red;}
+	#nav  {position:absolute;left:0;top:100;padding:10;
+		height:500;width:20%;background-color:yellow;}
+	#section {position:absolute;left:20%;top:100;padding:10;
+		height:200;width:80%;background-color:orange;}
+	#footer {position:absolute;left:0;top:600;padding:10;
+		height:150;width:100%;background-color:purple;}
+	#article {position:absolute;left:20%;top:300;padding:10;
+		height:300;width:80%;background-color:blue;}
+	.center{text-align:center}
+
+******************input***********************
+<input type=text name=number size=n>
+maxlength=n (최대 입력 수 제한)
+<input type=checkbox name=kor value=lang1 "checked">(radio동그란 버튼)
+<input type=button value="여기를 누르세요">
+<input type=submit(전송)
+<input type=image src=""(버튼을 이미지로 바꾸는거)
+		reset(취소)
+버튼 스타일 지정
+ex)input[type=submit] {color:red;background-color:lightblue;}
+
+버튼에 이미지 넣기
+<button>	
+		<img src=사진.jpg>
+</button>
+텍스트 영역 상자 만들기(글상자 만들기)
+textarea name=myarea rows=행 cols=열>
+셀렉트 태그
+<select size(겉으로 보이는 목록의 갯수)>
+	<optgroup label=>(목록내 구간 지정)
+		<option value>""
+	</optgroup>
+		<option value>""
+		<option value>""
+</select>
+포스트 사용
+<form method="post" action=주소>
+
+******************java***********************
+
+<head>
+<script>
+	document.write("내용")
+	function "변수명"(){for(i=1; i<=5; i++) 
+	document.write("HTML 시험 대박 기원", i, "<br><br>");} 
+
+</script>
+</head>
+<body>
+<script>
+	"변수명"();=정의한 함수를 실행
+</script>
+외부 자바 스크립트****외부 사용 할려면 외부 안에 모든 스크립트 다 넣어
+<script src=java.js>
+경고메세지
+<a href="javascript:alert('환영합니다!')">
+도큐멘트 태그 사용
+document.write()쓸데 없는 "" 첨가 금지
+변수 이용하기
+var 변수명 지정
+number= n    변수 선언 없이 사용
+변수 덧셈
+(x+y)=변수 x,y의 값을 더함
+"x"+y= 변수 x에 y를 이어 붙임 ******c# 원리
+비교 연산자
+앞 서 선언한 변수의 값이 괄호 안 조건 충족하면 true 아니면 false(x > y)
+조건문
+var x=5, y=3;
+	 z = (x > y) ? x + y : z = x - y; 
+maxvalue = (x > y) ? x : y;  
+****괄호 안의 조건 충족 하면 첫 번째 항으로 아니면 두 번째
+
+alert = 경고창 띄우기
+"변수명"=confirm :확인 취소 버튼이 있는 창, 변수명에 값을 저장한다
+
+document.write("당신의 선택은? ",변수명)
+document.write(prompt("창의 메세지" , "초기값"))
+ex)(prompt("너의 이름은?" , "극혐찬")
+버튼을 눌렸을 때 창 생성
+<input type=button value=클릭하세요 onClick="alert('반갑습니다!')">
+링크 눌렀을 때 알림 박스 띄우기
+<a href="http://www.inje.ac.kr" onClick="return confirm('인제대학교 홈페이지로 이동할까요?')">
+확인을 누르면 return 수행으로 홈페이지로 이동

@@ -1,0 +1,36 @@
+CGL양식
+텍스트 박스
+<input type=text name=number size=n>name에 텍스트 박스 입력값 저장
+name=password size=n(입력값 조절)
+name=id maxlength=n
+체크 박스
+<input type=checkbox name=kor value=lang1 "checked" 있으면 미리 생성>
+동그란 버튼 
+radio
+버튼
+<input type=button value="여기를 누르세요">
+form 데이터 전송을 위한 폼태그
+submit & reset
+submit 입력값 제출 = image src=사진.jpg width=75
+reset 입력값 취소
+복사할 파일 위치
+input type=file name=file>
+텍스트 영역 상자 만들기
+<textarea name=myarea rows=행 cols=열>입력 숫자 넘어도 입력가능
+셀렉트 태그
+<select name=color "multiple 4개보여줌" "size 지정한 값만큼만 나타냄">	
+	<option value=red "selected"기본값 지정>
+</select>
+<optgroup label=>
+	<option value>
+</optgroup>목록태그 느낌
+버튼에 이미지 넣기
+<button>	
+		<img src=사진.jpg>저장하기
+</button>
+스타일
+스타일을 지정해서 꾸밀 수 있다
+ex)input[type=submit] {color:red;background-color:lightblue;}
+post 사용
+<form method="post"
+많은 데이터 전송 시 post 사용 좋아

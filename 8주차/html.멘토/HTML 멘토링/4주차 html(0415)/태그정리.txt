@@ -1,0 +1,35 @@
+<caption> ~ </caption> : 캡션달기
+
+<caption align="bottom"> ~ </caption>
+
+<tr height="100">
+<tr, td align="center"> : 글자 정렬(align 좌우 valign 상하)
+<tr align="center" valign="top">
+<tr bgcolor="pink">
+<tr bordercolor="blue">
+
+table,tr,td,th 에 bgcolor쓰기 색깔이 들어감
+
+<th width="100"> : 비례하여 가로 크기가 지정됨(th와 td에서만 가능)
+각 테이블마다 크기를 맞추기 위해 사용가능
+
+height는 세로 크기 지정(일반적으로 tr에 사용)
+
+<td bgcolor="yellowgreen">
+<td background="오연서.jpg">
+
+
+동일한위치나 경로위치태그 사용해거나
+테이블에 배경그림 넣기
+<table background=>
+td,th에서 사용가능하나 이것역시 tr에서 사용이 불가능하다
+
+
+<table border>
+<table border="2" width="300" height="100">
+<table border="2" width="50%" height="25%"> : 테이블 가로, 세로 크기 지정
+<table border="1" cellpadding="10"> : 셀 안쪽 여백주기
+<table border="1" cellspacing="10"> : 셀 사이사이 여백주기
+<table border="1" height="120" bgcolor="skyblue">
+<table border="5" height="120" bordercolor="red">
+<table border width="300" height="200" background="오연서.jpg">

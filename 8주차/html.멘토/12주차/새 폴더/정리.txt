@@ -1,0 +1,24 @@
+visibility:hidden 감춘다
+
+layer 속 이미지 마진으로 위치 조정 가능
+		패딩으로도가능
+(마우스 클릭하면 3번 레이어가 나타남)
+OnMousedown="layer3.style.visibility='visible'"
+		OnMousemove="layer3.style.visibility='hidden'"
+(마우스 올리면 3번 레이어가 나타남)
+OnMouseOver="layer3.style.visibility='visible'"
+		OnMouseOut="layer3.style.visibility='hidden'"
+
+사진 부분적으로 잘라 나타내기
+clip:rect(100px,300px,200px,150px)}
+
+position:relative
+위치 계산 할 때 원래 위치부터 계산
+
+auto 좌우 남은 여백 알아서 조절
+1em : 비율
+{clear:both}클리어
+margin: -n
+기존의 마진 방향과 반대로 여백 생성
+overflow:hidden : 사진 넘치면 숨겨라
+overflow:scroll  :사진 넘치면 스크롤 생성

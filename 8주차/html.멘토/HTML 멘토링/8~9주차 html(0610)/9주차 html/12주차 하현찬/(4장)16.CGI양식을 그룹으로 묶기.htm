@@ -1,0 +1,26 @@
+﻿<html>
+<head><title>CGI 양식</title>
+<style>
+	fieldset {border:navy 2 solid;width:350;padding10}
+	imput [type=submit] {color:red;background-color:lightblue;}
+</style>
+</head>
+<body>
+<b>CGI양식을 그룹으로 묶기</b><hr>
+<form>
+	<fieldset>
+		<legend>개인 정보</legend>
+		이름 :<imput type= text name=name size=20>
+		나이 :<imput type= text name=age size=4><p>
+		주소 :<imput type= text name=address size=40>
+	</fieldset>
+	<fieldset>
+		<legend>내가 좋아하는색상</legend>
+		<imput type=cheakbox name=red value=red>빨강
+		<imput type=cheakbox name=yellow value=red>노랑
+		<imput type=cheakbox name=blue value=red>파랑
+		<imput type=cheakbox name=green value=red>초록
+	</fieldset><p>
+	<imput type=submit value="보내기">
+</body>
+</html>

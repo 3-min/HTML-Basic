@@ -1,0 +1,21 @@
+﻿<html>
+<head><title>JavaScript</title>
+<script>
+	function getsum(y)
+	{
+		total=0;
+		for(var count=1;count<=y;count++)
+		{
+			total+=count;
+		}
+		return total; /*함수값으로 돌려보내라*/
+	}
+</script>
+</head>
+<body><b>Function</b><hr>
+<script>
+	x=prompt("100 이하의 숫자를 입력하세요!","1"); /*prompt에 의해 창을 띄움*/
+	document.write("0부터 ", + x + "까지의 합은? ", getsum(x)); /*창에 100을 입력한다면 x값은 100이 됨*/
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+스크롤바 색깔 바꾸기
+<style>
+	body {scrollbar-face-color:red;
+		scrollbar-shadow-color:navy;
+		scrollbar-track-color:lightblue;
+		scrollbar-arrow-color:navy;} 
+face: 스크롤바 색상
+track 길 색상
+arrow 화살표 색상
+테두리 속성
+border-top:solid black 10px;
+곡선 처리
+border-bottom-left-radius:50px
+테두리에 이미지 넣기
+stretch/ repeat/  round
+늘리고	반복	
+border-image:url(사진.jpg) 35 round;
+solid=선모양
+여백속성
+margin:50 30; 상하 50 좌우 30
+margin:50; = 상하좌우 모두 50px
+부분 적으로만 주고 싶으면 인라인 스타일시트로 여백 줄 수 있다
+그림자 속성
+box-shadow = 상자에 그림자
+text-shadow:5 5  10(오른쪽으로 5픽셀 아래쪽으로 5픽셀 10픽셀만큼 퍼지게) =글자에 그림자
+외곽선 지정
+outline:10 dotted orange
+투명도
+style="opacity:0.5"

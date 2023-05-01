@@ -1,0 +1,19 @@
+﻿<html>
+<head><title>overflow</title>
+<style>
+	#layer1 {position:absolute;left:50;top:50;
+		width:430;height:250;
+		background-color:green;
+		overflow:hidden;}
+	#layer2 {position:absolute;left:50;top:330;
+		width:430;height:250;
+		background-color:yellow;
+		overflow:scroll;}
+	img {width:200;height:150}
+</style></head>
+<body>
+<div id=layer1><img src=사진.jpg>
+<img src=사진.jpg><img src=사진.jpg></div>
+<div id=layer2><img src=사진.jpg>
+<img src=사진.jpg><img src=사진.jpg></div>
+</html>

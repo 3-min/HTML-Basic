@@ -1,0 +1,40 @@
+style
+
+font - style:italic (기울이기)
+	family:(글씨체)
+	size : (글씨크기)
+	weight : (글씨 무게?)	
+font:(이탈릭 25 궁서체)
+
+text-decoration : (글자에 줄 끗기)
+	align
+	transform:capitalize:(앞 글자 대문자)
+	letter-sapcing:    (글자 간 사이 조절)
+	transform:uppercase(글꼴 바꿔줌 (강조))
+	
+body
+	background-color:(부분적 배경색 지정 가능)
+		text-(부과적인 기능 설정 가능)
+사진 넣기
+		-image:url(사진.확장)
+		-repaet:no-repeat(반복없음)
+		-position:숫자% or  left top....
+***축약형***
+body{background:url(사진.jpg) repeat-(x,y가로세로)x (배경이미지고정)fixed (포지션)50%;
+		(백그라운드 크기 추가 축약형에 포함 x)background-size:20% 20%}
+
+position:absolute;top:100;(레프트는 필수로 들어감)left:100;z-index:n}
+
+글자 합치기
+8번 자료 인덱스 없이 순서대로해서 겹친다
+
+목록 태그에도 스타일 지정 가능
+목록번호에 사진 넣는거 가능 9번
+축약형임        ====     ul li{list-style:url(그림1.png)inside}
+
+;white-space:pre 내가 준 여백을 다 나타냄
+li{float:left} 옆으로 배열
+
+11번
+ 
+디스플레이 12번

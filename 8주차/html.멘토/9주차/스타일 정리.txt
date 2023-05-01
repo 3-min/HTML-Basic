@@ -1,0 +1,84 @@
+스타일 사용법: 앞에서 지정해주면 바디에 오는 애들은 알아서 바뀜
+</title>
+<style>
+	h2{font-style:italic;color:???}
+</style>
+<body>
+인라인 스타일 시트:한 부분만 추가 변경
+
+임베딩 내부
+<body>
+<h2 style ="font-family:궁서체;color:blue">
+
+
+링킹스타일
+<link rel="stylesheet"				<style>
+					==	@import"dynamic.css"
+						</style>
+	type="text/css"
+	href="dynamic.css">
+
+
+스타일 태그 주석달기
+//스타일태그
+
+
+
+중복 정의
+h2, h3, b, p ,, , , , ,,,,{font-style:italic;color:???}
+
+
+
+클래스지정
+h2.red {color:red;font-family:궁서체}      .뒤에 오는 애들은 클래스 이름
+클래스 사용시 직접 입력해주어야만 출력 된다
+
+
+
+공동사용 클래스
+font {font-style:italic;color:gold}
+.aaa {font-style:italic;color:gold}
+.bbb {font-weight:bold;color:blue}
+.ccc {font-weight:bold;color:red}
+<font class=ccc>미적용 font+ccc</font>
+
+
+
+id사용하여 스타일 지정
+#나중에 자바스크립트에서 유용#
+#blue {font-weight:bold;color:blue}
+<h1 id=blue>스타일 blue</h1>
+
+
+
+전체지정
+<style type="text/css">
+	* {color:blue}
+
+스타일 지정은 부분 삽입 가능(10번)
+
+
+
+스타일 내에 스타일(11번)
+h2 b{color:blue;font-family:궁서체}
+b는 단독 사용 x
+
+
+좁은 범위 묶어서 처리 span(12번)
+<span style="font-style:italic;color:red">
+	범위 안에서</span>
+스타일 지정</h2>
+
+
+링크 스타일 지정(13번)
+<style>
+	a:link{font-size:15pt;color:red} 일반
+	a:visited{color:blue} 방문한거
+	a:hover{;color:violet} 마우스 올렸을때
+	a:active{font-size:25pt;color:green} 클릭한 상태
+</style>
+
+페수도 클래스
+	div:first-line{}
+	div:first-letter{}
+첫 글자와 첫문장 바꿔준다 여러 형식으로 변형 가능 추정

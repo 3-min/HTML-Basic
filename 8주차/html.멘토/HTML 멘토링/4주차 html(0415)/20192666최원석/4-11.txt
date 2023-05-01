@@ -1,0 +1,75 @@
+﻿table 열면 /table 꼭해주기!!!   (p align=right 쌉가능)
+
+caption은 table연다음에 바로 써주기 /caption 꼭써주기 align속성 사용해서 아래쪽에 쓸수있음 align=bottom
+
+cellspacing 셀과 셀 사이 여백주기(바깥쪽)
+cellpadding 셀 안쪽 여백주기 border는 제일 바깥
+
+테이블 가로 길이 늘려기 width(문자열의 길이에 비례해서 잡힘)
+width=300 width=50%
+
+<th width=100>테이블 태그에 width를쓰면 비례해서 전체적으로 잡지마 tr은안됨 th나 td에서만 
+각 테이블마다 크기를 맞추기위해 사용가능.
+
+height도 width랑 비슷함 대신 세로 길이 height는 tr에사용가능 (높이이기 때문에 일반적으론 tr에쓰는경우가많음)
+
+br태그를써서 여백만들어주기가능
+<tr align=center>쓰면 가운데정렬
+<td align=right>
+
+align 좌우 valign 상하
+
+.htm안만듦    1  table,tr,td,th 에 bgcolor쓰기 색깔이 들어감
+                                ex) <tr bgcolor=yellow>
+
+                 2      bordercolor=red 이것처럼 테두리에도 색넣기 가능
+                             <table bordercolor>
+                             <tr bordercolor>
+                             <td or th bordercolor>
+
+테이블 중첩해서 사용가능
+<table>
+<tr>
+<td>
+<td>
+</tr>
+<tr>
+<td>
+<td><table>
+<tr><td><td></tr>
+<table>  </td>
+</tr>
+</table>
+
+동일한위치나 경로위치태그 사용해거나
+테이블에 배경그림 넣기
+<table background=>
+td,th에서 사용가능하나 이것역시 tr에서 사용이 불가능하다
+
+
+
+★테이블을 이용한 화면 분활 check★나중에해보기
+
+
+
+
+fieldset은 글상자태그
+legend는 글상자의 제목
+legend는 align 속성 사용가능
+제목에 img src로 그림을 제목으로 설정가능
+
+
+
+<marquee>
+</marquee>
+자동 스크롤
+<marquee bgcolor=>이랑 글 자리에 그림넣어 스크롤처럼 이용가능
+width height hspace vspace  모두 사용가능
+
+scrolldelay 사용해서 지연시간 넣을수있음.!
+1000으로 나눔 1000을입력하면 1초마다멈춤
+scrollamount 픽셀이동속도
+
+behavior=scroll,alternate,slide
+slide alternate loop=반복수
+direction=left,right,up,down 방향지정
