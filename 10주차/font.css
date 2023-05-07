@@ -1,0 +1,22 @@
+h2 {
+	font-family: 궁서체;
+}
+.family {
+	font-family: Algerian, Cambria. Serif;
+}/*폰트를 브라우저가 지원하지 않을 경우 나열된 순서대로 선택*/
+.italic {
+	font-style: italic;
+	color: blue;
+}
+.size_1 { /*디폴트 크기 : 12pt, 16px, 1em */
+	font-size: 1.5em; /*1.5배 큰 숫자 */
+	font-weight: lighter;
+}
+.size_2 {
+	font-size: xx-large; /* 브라우저 마다 크기 다름 */
+	font-weight: 700; /* normal은 400, bold는 700 */
+	color: green;
+}
+.fonts {
+	font: italic small-caps bold 25px; "seqoe script";
+}/*축약형, 숙성값 순서대로 기술, size & family는 필수*/
