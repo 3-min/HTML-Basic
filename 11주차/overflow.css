@@ -1,0 +1,22 @@
+#layer1 {
+		width: 450px;
+		height: 250px;
+		background-color: green;
+}/* overflow: visible;이 디폴트 */
+#layer2 {
+		width: 450px;
+		height: 250px;
+		background-color: yellow;
+		overflow: hidden;
+}
+#layer3 {
+		width: 450px;
+		height: 250px;
+		background-color: blue;
+		overflow: /*scroll;*/auto;
+}/*auto는 자동으로 스크롤바를 생성 또는 삭제해주고 scroll은 
+필요가 없어도 스크롤을 무조건 생성하는 속성이다.*/
+img {
+	width: 200px;
+	height: 150px;
+}
