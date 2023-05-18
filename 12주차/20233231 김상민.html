@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+	전산기초실습 12주차 실습과제
+	</title>
+	<style>
+	.shadow_2 { text-shadow: 5px 5px 5px blue; color: lightgreen; }
+	.shadow_3 { text-shadow: 5px 5px 5px yellow, 0px 0px 10px black; color:red;}
+	.color_1 { 
+		background-color: mistyrose; 
+		margin-left:50px;
+		padding: 15px 40px 15px 40px;
+		width: 500px;
+		}
+	#layer {
+		padding: 50px;
+		margin: 50px auto; /*가로로 가운데*/
+		width: 1000px;
+		background-color: lightyellow;
+		}
+	img {
+		border-radius: 20px;
+		box-shadow:10px 10px 10px green;
+		float: left;
+		margin: 25px;
+		height: 200px;
+		}
+	fieldset {
+		text-align: center;
+		padding: 30px;
+		width: 450px;
+		border-radius: 0px 20px;
+		box-shadow: 10px 10px 10px green;
+		display: inline-block;
+		margin-left: 25px;
+		
+		}
+	
+	input[type=text]:focus, input[type=submit]:hover {
+	background-color: gold;
+		}
+		
+	input[type=submit] {
+	/* 속성 셀렉터 사용 */
+	width: 100px;
+	color: red;
+	background-color: aqua;
+	cursor: pointer;
+	padding:8px;
+	}
+	ul li { list-style: url(그림.png) inside; }
+	#name_1 {
+		background-color: lightgreen;
+		color: orange;
+		margin-left: 50px;
+		margin-top: 30px;
+		width: 400px;
+		text-align: center;
+		padding: 15px;
+		
+		}
+	table {
+	border-collapse: collapse;
+	font-size: 22px;
+	margin: 20px;
+	float: right;
+} /* border-collapse는 테두리 합치기 */
+caption {
+	font-size: 25px;
+	color: darkred;
+	margin-bottom: 5px;
+}
+th, td {
+	width: 150px;
+	height: 50px;
+	text-align: center;
+}
+thead, tfoot {
+	background: darkgray;
+	color: gold;
+}
+tbody tr:nth-child(odd) {
+	background: lightyellow;
+} /*홀수 번째 행에 배경색 지정, 짝수는 oven*/
+tbody tr:hover {
+	background: gold;
+}
+th {
+	border-right: 3px dotted gray;
+	}
+	select {
+	width:185px;
+	}
+	</style>
+</head>
+<body>
+<h5 style="text-align: right; color:purple">전산기초실습 12주차 실습과제 20233231 김상민</h5>
+<hr>
+<thead>
+<h1 class=color_1>
+<span class=shadow_3>오늘의 상품</span><span class=shadow_2> 바질 페스토 파스타</span>
+</h1>
+</thead>
+<tbody>
+<div id=layer>
+	<img src="파스타.jpg">
+	<form>
+	<fieldset>
+	<legend style="text-align:left">주문하기</legend>
+	상품 : 
+	<select name=product>
+		<option>바질 페스토 파스타</option>
+	</select><p>
+	수량 : 
+	<select name=개수>
+		<option>1개</option>
+	</select>
+	<p>
+	연락처 : <input type=tel placeholder="010-1234-5678"><p>
+	배송지 : <input type=text name=place placeholder="김해시 인제로"><p>
+	<input type=submit value=선물하기>&nbsp;&nbsp;
+	<input type=submit value=장바구니>&nbsp;&nbsp;
+	<input type=submit value=바로구매>
+	</fieldset><br>
+	</form>
+</div>
+<table>
+<caption>영양 성분</caption>
+	<tr style="background-color:lightblue; border-top: 5px solid gray; border-bottom: 7px double gray;">
+		<th colspan=2>1회 제공량 225g(415kcal)</th>
+	<tr>
+		<th>탄수화물</th>
+		<td>65g</td>
+	</tr>
+	<tr>
+		<th>단백질</th>
+		<td>10g</td>
+	</tr>
+	<tr>
+		<th>지방</th>
+		<td>13g</td>
+	</tr>
+	<tr>
+		<th>당류</th>
+		<td>0.7g</td>
+	</tr>
+	<tr>
+		<th>나트륨</th>
+		<td>520mg</td>
+	</tr>
+	<tr style="border-bottom:5px solid gray;">
+		<th>콜레스테롤</th>
+		<td>3mg</td>
+	</tr>
+	</table>
+<h3 id=name_1>바질 페스토 파스타 레시피</h3>
+<ul style="color:green">
+	<li>끓는 물에 소금 한 꼬집 넣고 파스타면 삶기</li>
+	<li>팬에 올리브 오일을 두르고 편 썬 마늘 넣어 볶기</li>
+	<li>마늘 향이 올라오면 새우 넣어 노릇노릇 굽기</li>
+	<li>새우가 익으면 삶아 둔 파스타면 넣고 볶기</li>
+	<li>바질 페스토 넣고 약불로 볶기</li>
+	<li>불을 끄고 후추와 파마산 치즈 가루 넣기</li>
+</ul>
+
+</body>
+</html>

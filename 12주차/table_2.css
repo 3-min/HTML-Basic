@@ -1,0 +1,28 @@
+table {
+	border-collapse: collapse;
+	font-size: 22px;
+	margin: 20px;
+} /* border-collapse는 테두리 합치기 */
+caption {
+	font-size: 25px;
+	color: darkred;
+	margin-bottom: 5px;
+}
+th, td {
+	width: 150px;
+	height: 50px;
+	text-align: center;
+}
+thead, tfoot {
+	background: darkgray;
+	color: gold;
+}
+tbody tr:nth-child(odd) {
+	background: lightyellow;
+} /*홀수 번째 행에 배경색 지정, 짝수는 oven*/
+tbody tr:hover {
+	background: gold;
+}
+td, tfoot th {
+	border-bottom: 2px solid gray;
+}
