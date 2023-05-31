@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+	JavaScript
+	</title>
+</head>
+<body>
+<b>변수 사용하기</b>
+<hr>
+<script>
+		var x, y;						// 두 개의 변수 선언. 재선언 가능(cf.let은 불가)
+		let test = 100;					// 변수 선언하고 초기값 저장, '='는 대입 연산자
+		const Max = 10;					// 상수 선언, 상수 값 바꿀 수 없음, 재선언 불가
+		p = 20;							// var, let 없이 변수 선언하고 초기값 저장
+		Test = 1234;					// 대소문자 구분, test와는 다른 변수
+		x = 4 + 9; y = 4 + "9";			// 위에서 선언한 변수 x와 y에 값을 대입
+		z = "5" + x;					// 한 줄에 한 문장이면 ; 생략 가능
+		
+		document.write("test = ", test, "<p>");
+		document.write("Test = ", Test, "<p>");
+		document.write("Max = ", Max, "<p>");
+		document.write("x = " + x + "<p>");
+		document.write("y = " + y + "<p>");				// 숫자 + 문자 = 문자
+		document.write("z = " + z + "<p>");				// 문자 + 문자 = 문자
+		document.write("p + x = " + (p + x) + "<p>");
+		document.write("y + z = " + (y + z));			// 문자 + 문자 = 문자
+	</script>
+</body>
+</html>

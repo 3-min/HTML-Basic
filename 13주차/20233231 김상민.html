@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+	전산기초실습 13주차 실습과제
+	</title>
+	<style>
+	body{
+		background-color:#EFFBFB;
+	}
+	table {
+		margin: 20px auto;
+		border-top-style:solid;
+		border-bottom-style:solid;
+	}
+	th {
+		width : 100px;
+		border-bottom-style:double;
+	}
+	th, td{
+		border-right-style:dotted;
+	}
+	.style01{
+		background-color:mistyrose;
+		margin: 30px auto;
+		width:1000px;
+		padding : 15px 50px 15px 50px;
+		float:bottom;
+	}
+	.style02{
+		margin-right: 20px;
+	}
+	</style>
+</head>
+<body>
+<h5 style="color : red; text-align:right">전산기초실습 13주차 실습과제 20233231 김상민</h5>
+<h1 style="color : blue; text-align:center; font-style:italic;">JavaScript</h1>
+<hr>
+<table>
+<caption>Variable</caption>
+<tr style="background-color:mistyrose;">
+	<th>a</th>
+	<th>b</th>
+	<th>c</th>
+	<th>d</th>
+	<th>e</th>
+	<th style="border-right-style:none">f</th>
+</tr>
+<tr style="text-align:center">
+	<td>7</td>
+	<td>3</td>
+	<td>true</td>
+	<td>false</td>
+	<td>Java</td>
+	<td style="border-right-style:none">Script</td>
+</tr>
+</table>
+<Script>
+			let a = 7, b = 3;
+			let c =  true, d = false;
+			e = "Java";
+			f = "Script";
+</Script>
+<div class=style01>
+위 테이블을 참고하여 변수를 선언하고 아래와 같이 각 연산의 결과를 출력하세요!<p>
+	<div style="display:inline-block" class=style02>
+		<script>
+			document.write(a + " + " + b + " = " + (a + b) + "<p>");
+			document.write(a + " - " + b + " = " + (a - b) + "<p>");
+			document.write(a + " * " + b + " = " + (a * b) + "<p>");
+			document.write(a + " / " + b + " = " + (a / b) + "<p>");
+			document.write(a + " % " + b + " = " + (a % b) + "<p>");
+		</Script>
+	</div>
+	<div style="display:inline-block" class=style02>
+		<Script>
+			document.write(a + " > " + b + " : " + (a > b) + "<p>");
+			document.write(a + " < " + b + " : " + (a < b) + "<p>");
+			document.write(a + " == " + b + " : " + (a == b) + "<p>");
+			document.write(a + " != " + b + " : " + (a != b) + "<p>");
+			document.write(e + " + " + f + " = " + (e + f) + "<p>");
+		</Script>
+	</div>
+	<div style="display:inline-block" class=style02>
+	<Script>
+			document.write("true AND true : ", c && c, "<p>");
+			document.write("true AND false : ", c && d, "<p>");
+			document.write("true OR false : ", c || d, "<p>");
+			document.write("false OR false : ", d || d, "<p>");
+			document.write("NOT true : ", !c, "<p>");
+	</Script>
+	</div><p>
+	<Script>
+	document.write("조건 연산 사용하기 a 와 b의 차는 " + (a - b) + "입니다.");
+	</Script>
+</div>
+</body>
+</html>
