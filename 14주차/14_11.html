@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+	JavaScript
+	</title>
+	<script>
+		function getSum()
+		{
+			let total = 0;
+			for(n = 1; n <= 100; n++)
+				total += n;
+			return total;	//total은 리턴값
+		}
+	</script>
+</head>
+<body>
+<b>function - 매개 변수는 없고 리턴 값만 있는 함수</b>
+<hr>
+<script>
+	document.write("1부터 100까지의 합은 ");
+	document.write(getSum() + "입니다.");
+</script>
+</body>
+</html>

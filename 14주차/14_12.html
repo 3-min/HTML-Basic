@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+	JavaScript
+	</title>
+	<script>
+		function getSum(x)	// x는 매개 변수
+		{
+			let total = 0;
+			for(n = 1; n <= x; n++)
+				total += n;
+			return total; // total은 리턴 값
+		}
+	</script>
+</head>
+<body>
+<b>function - 매개 변수와 리턴 값 모두 있는 함수</b>
+<hr>
+<script>
+	let inputNum = Number(prompt("1보다 큰 숫자를 입력하세요!", 100));
+	document.write("1부터 " + inputNum + "까지의 합은 ");
+	document.write(getSum(inputNum) + "입니다.");
+</script>
+</body>
+</html>

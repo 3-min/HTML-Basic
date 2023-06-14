@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+	JavaScript
+	</title>
+	<style>
+		.box1 {
+			height: 200px;
+			background: mistyrose;
+		}
+		.box2 {
+			position: relative;
+			left: 100px;
+			top: -100px;
+			height: 200px;
+			background: aliceblue;
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+<b>Event Handler</b>
+<hr>
+<div class=box1
+	OnMouseDown="box.style.visibility='visible'"
+	onmouseout="box.style.visibility='hidden'">
+	클릭하면 보입니다!
+</div>
+<div class=box2 id=box></div>	<!-- 꼭 id 사용하기 -->
+<!-- 또는
+<style>
+	#box1 {
+		height: 200px;
+		background: mistyrose;
+	}
+	#box2 {
+		position: relative;
+		left: 100px;
+		top: -100px;
+		height: 200px;
+		background: aliceblue;
+		visibility: hidden;
+	}
+</style>
+---------------------------------------------
+<div id=box1
+	OnMouseDown="box2.style.visibility='visible'"
+	onmouseout="box2.style.visibility='hidden'">
+	클릭하면 보입니다!
+</div>
+<div id=box2></div>
+</body>
+</html>
